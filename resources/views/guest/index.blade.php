@@ -7,10 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-   <nav class="bg-indigo-50 w-full flex justify-center pt-4 pb-4">
+   <nav class="bg-red-50 w-full flex justify-center pt-4 pb-4">
   <div class="max-w-7xl px-2 sm:px-6 lg:px-8 flex justify-between items-center">
     <div class="flex items-center">
-      <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+      <img class="h-8 w-auto pr-6" src="{{ asset('images/beets.png') }}" alt="Beets Restaurant">
     </div>
     <div class="hidden sm:block">
       <div class="flex space-x-4">
