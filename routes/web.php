@@ -16,4 +16,4 @@ use App\Http\Controllers\HomeController;
 
 
 
-Route::get('/home', [HomeController::class, 'index']) -> name('guest.index');
+Route::get('/home', [HomeController::class, 'index']) -> name('guestHome');

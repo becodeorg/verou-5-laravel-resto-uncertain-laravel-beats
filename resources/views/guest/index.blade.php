@@ -30,15 +30,39 @@
     </div>
 </nav>
 
-<!-- Welcome Section -->
-    <section class="h-screen flex flex-col justify-center items-center bg-white">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6 text-center">Beat Our Beets</h1>
-        <p class="text-lg sm:text-xl md:text-2xl text-gray-700 mb-8 text-center">Explore our services and products designed just for you.</p>
+<section class="h-screen relative overflow-hidden bg-cover bg-center" style="background-image: url('{{ asset('images/bg-home-guest.png') }}');">
+    <!-- Overlay with translucent white -->
+    <div class="absolute inset-0 bg-white bg-opacity-10"></div>
+    
+    <!-- Your content with adjusted text color -->
+    <div class="relative z-10 flex flex-col justify-center items-center h-full text-center text-gray-900">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">Beat Our Beets</h1>
+        <p class="text-lg sm:text-xl md:text-2xl mb-8">Indulge in a unique culinary experience at our restaurant, <br>where every dish celebrates the vibrant and versatile beetroot in innovative and delicious ways.</p>
         <div>
-        <a href="#services" class="bg-red-800 hover:bg-green-800 text-white font-semibold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">Show Menu</a>
-        <a href="#services" class="bg-red-800 hover:bg-green-800 text-white font-semibold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">Book a Table</a>
+            <a href="#services" class="bg-red-800 hover:bg-green-800 font-semibold py-3 px-6 rounded-full text-white text-lg transition duration-300 ease-in-out transform hover:scale-105">Show Menu</a>
+            <a href="#services" class="bg-red-800 hover:bg-green-800 font-semibold py-3 px-6 rounded-full text-white text-lg transition duration-300 ease-in-out transform hover:scale-105">Book a Table</a>
         </div>
-    </section>
+    </div>
+</section>
+
+
+
+<section class="flex flex-col lg:flex-row py-12 lg:py-24 bg-white">
+    <!-- Information on the left -->
+    <div class="lg:w-1/2 px-8 lg:px-24 flex flex-col justify-center">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">Discover Our Beet Specialties</h2>
+        <p class="text-lg text-gray-700 mb-6">Explore our wide range of dishes crafted with the finest beets sourced from local farmers. From salads to main courses and desserts, we have something delightful for everyone.</p>
+        <p class="text-lg text-gray-700 mb-6">Our chefs blend tradition with innovation, ensuring each dish is a unique experience that tantalizes your taste buds and leaves you craving more.</p>
+        <a href="#" class="text-lg text-red-800 font-semibold hover:underline">Explore Our Menu</a>
+    </div>
+    <!-- Picture on the right -->
+    <div class="lg:w-1/2">
+        <img src="{{ asset('images/beets-menu-guest.jpg') }}" alt="Beet Dishes" class="w-50 h-50">
+    </div>
+</section>
+
+
+
 
 </body>
 </html>
