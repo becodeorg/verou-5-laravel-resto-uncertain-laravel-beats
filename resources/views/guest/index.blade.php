@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" href="{{ asset('images/beets-logo.png') }}">
 </head>
-<body>
+<body class="bg-red-50">
 <nav class="bg-red-50 w-full flex justify-between items-center px-20 py-4">
     <!-- Logo -->
     <div class="flex items-center">
@@ -47,19 +47,22 @@
 
 
 
-<section class="flex flex-col lg:flex-row py-12 lg:py-24 bg-white">
-    <!-- Information on the left -->
-    <div class="lg:w-1/2 px-8 lg:px-24 flex flex-col justify-center">
-        <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">Discover Our Beet Specialties</h2>
-        <p class="text-lg text-gray-700 mb-6">Explore our wide range of dishes crafted with the finest beets sourced from local farmers. From salads to main courses and desserts, we have something delightful for everyone.</p>
-        <p class="text-lg text-gray-700 mb-6">Our chefs blend tradition with innovation, ensuring each dish is a unique experience that tantalizes your taste buds and leaves you craving more.</p>
-        <a href="#" class="text-lg text-red-800 font-semibold hover:underline">Explore Our Menu</a>
-    </div>
-    <!-- Picture on the right -->
-    <div class="lg:w-1/2">
-        <img src="{{ asset('images/beets-menu-guest.jpg') }}" alt="Beet Dishes" class="w-50 h-50">
+<section class="py-12 lg:py-24">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 lg:px-0">
+        <!-- Picture on the left -->
+        <div class="lg:w-1/2 lg:px-8 mb-8 lg:mb-0">
+            <img src="{{ asset('images/beets-menu-guest.jpg') }}" alt="Beet Dishes" class="w-full h-auto rounded-lg">
+        </div>
+        <!-- Information on the right -->
+        <div class="lg:w-1/2 px-6 lg:px-12">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">Discover Our Beetsy Menu</h2>
+            <p class="text-lg text-gray-700 mb-6">Explore our wide range of dishes crafted with the finest beets sourced from local farmers. From salads to main courses and desserts, we have something delightful for everyone.</p>
+            <p class="text-lg text-gray-700 mb-6">Our chefs blend tradition with innovation, ensuring each dish is a unique experience that tantalizes your taste buds and leaves you craving more.</p>
+            <a href="#" class="bg-red-800 hover:bg-green-800 text-white font-semibold py-4 px-8 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">Explore Our Menu</a>
+        </div>
     </div>
 </section>
+
 
 
 
