@@ -13,8 +13,14 @@
     <body class="container mx-auto px-4 py-8">
         <h1 class="mx-auto bg-purple-500 text-3xl py-2 px-4 font-bold text-white mt-8 mb-8 max-w-max">Welcome to Undecided Beets</h1>
         <div class="flex justify-center space-x-12">
-            <button class="bg-yellow-500 hover:bg-yellow-800 text-white font-bold h-16 w-48 rounded">Guest</button>
-            <button class="bg-red-500 hover:bg-pink-700 text-white font-bold h-16 w-48 rounded">Employee</button>
+            <button id="guestButton" class="bg-yellow-500 hover:bg-yellow-800 text-white font-bold h-16 w-48 rounded">Guest</button>
+            <button id="employeeButton" class="bg-red-500 hover:bg-pink-700 text-white font-bold h-16 w-48 rounded">Employee</button>
         </div>
+
+        <script>  
+            document.getElementById('employeeButton').addEventListener('click', function() {
+                window.location.href = "{{ route('login') }}";
+            });
+        </script>
     </body>
 </html>
