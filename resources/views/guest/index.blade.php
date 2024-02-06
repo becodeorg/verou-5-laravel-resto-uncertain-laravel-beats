@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" href="{{ asset('images/beets-logo.png') }}">
 </head>
-<body class="bg-red-50">
+<body>
 <nav class="bg-red-50 w-full flex justify-between items-center px-20 py-4">
     <!-- Logo -->
     <div class="flex items-center">
@@ -32,7 +32,7 @@
 
 <section class="h-screen relative overflow-hidden bg-cover bg-center" style="background-image: url('{{ asset('images/bg-home-guest.png') }}');">
     <!-- Overlay with translucent white -->
-    <div class="absolute inset-0 bg-white bg-opacity-10"></div>
+    <div class="absolute inset-0 bg-white bg-opacity-50"></div>
     
     <!-- Your content with adjusted text color -->
     <div class="relative z-10 flex flex-col justify-center items-center h-full text-center text-gray-900">
@@ -57,9 +57,17 @@
         <div class="lg:w-1/2 px-6 lg:px-12">
             <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">Discover Our Beetsy Menu</h2>
             <p class="text-lg text-gray-700 mb-6">Explore our wide range of dishes crafted with the finest beets sourced from local farmers. From salads to main courses and desserts, we have something delightful for everyone.</p>
-            <p class="text-lg text-gray-700 mb-6">Our chefs blend tradition with innovation, ensuring each dish is a unique experience that tantalizes your taste buds and leaves you craving more.</p>
-            <a href="#" class="bg-red-800 hover:bg-green-800 text-white font-semibold py-4 px-8 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">Explore Our Menu</a>
+            <p class="text-lg text-gray-700 mb-10">Our chefs blend tradition with innovation, ensuring each dish is a unique experience that tantalizes your taste buds and leaves you craving more.</p>
+            <a href="#" class="bg-red-800 hover:bg-green-800 text-white font-semibold py-4 px-8 rounded-full text-lg">Explore Our Menu</a>
         </div>
+    </div>
+</section>
+
+<section class="bg-red-200 py-20">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">Book a Table</h2>
+        <p class="text-lg text-gray-700 mb-8">Ready to experience our beet-inspired dishes? Book a table now and indulge in a culinary adventure!</p>
+        <a href="#" class="bg-red-800 hover:bg-green-800 text-white font-semibold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">Book a Table</a>
     </div>
 </section>
 
