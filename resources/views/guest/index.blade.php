@@ -92,7 +92,26 @@
     </div>
 </section>
 
+<footer class="p-4 bg-red-50 rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-red-900">
+    
+    <ul class="flex flex-wrap items-center mt-3 sm:mt-0">
+        <li>
+            <a href="#" class="mr-4 text-sm text-red-900 hover:underline md:mr-6 dark:text-gray-400">Home</a>
+        </li>
+        <li>
+            <a href="#" class="mr-4 text-sm text-red-900 hover:underline md:mr-6 dark:text-gray-400">Menu</a>
+        </li>
+        <li>
+            <a href="#" class="mr-4 text-sm text-red-900 hover:underline md:mr-6 dark:text-gray-400">About Us</a>
+        </li>
+        <li>
+            <a href="#" class="text-sm text-red-900 hover:underline dark:text-gray-400">Contact</a>
+        </li>
+    </ul>
 
+    <span class="text-sm text-red-900 sm:text-center dark:text-gray-400">© BeatThebeets 2024 <a href="https://flowbite.com" class="hover:underline" target="_blank">Undecided Beet™</a>. All Rights Reserved.
+    </span>
+</footer>
 
 </body>
 </html>
