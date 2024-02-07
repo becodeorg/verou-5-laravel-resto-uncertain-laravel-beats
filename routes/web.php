@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ReservationController;
 
 
 /*
@@ -20,6 +21,8 @@ use App\Http\Controllers\LoginController;
 
 
 Route::get('/home', [HomeController::class, 'index']) -> name('guestHome');
+
+Route::get('/book', [ReservationController::class, 'create']) -> name('guestBookTable');
 
 Route::get('/', [LandingController::class, 'show']) -> name('landingPage');
 
