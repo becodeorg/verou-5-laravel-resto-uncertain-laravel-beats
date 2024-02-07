@@ -12,7 +12,8 @@ class Reservation extends Model
     protected $fillable = [
         'name',
         'email',
-        'timestamp',
+        'date',
+        'time',
         'table_id',
         'notes',
     ];
