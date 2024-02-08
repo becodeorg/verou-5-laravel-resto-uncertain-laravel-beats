@@ -18,6 +18,10 @@
         </div>
 
         <script>  
+            document.getElementById('guestButton').addEventListener('click', function() {
+                window.location.href = "{{ route('guestHome') }}";
+            });
+
             document.getElementById('employeeButton').addEventListener('click', function() {
                 window.location.href = "{{ route('login') }}";
             });
