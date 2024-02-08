@@ -14,10 +14,10 @@ class LoginController extends Controller
 
     public function login (Request $request)
     {
-        $username = $request->username;
+        $username = $request->name;
         $password = $request->password;
         
-        if (auth()->attempt(['username' => $username, 'password' => $password])) {
+        if (auth()->attempt(['name' => $username, 'password' => $password])) {
             return redirect()->route('landingPage');
         } else {
             return back()->withErrors(['password' => 'Invalid username or password.'])->withInput();

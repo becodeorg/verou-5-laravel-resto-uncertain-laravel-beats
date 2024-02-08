@@ -20,11 +20,11 @@
             @csrf
             <div class="mb-4">
                 <label for="username" class="block text-gray-700 text-sm font-bold mb-2">Username</label>
-                <input id="username" type="text" name="username" value="employee_username" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+                <input id="username" type="text" name="username" value="Dwight" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500">
             </div>
             <div class="mb-4">
                 <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
-                <input id="password" type="password" name="password" value="employee_password" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+                <input id="password" type="password" name="password" value="ilovebeets" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500">
             </div>
             <div class="mb-4">
                 <button type="submit" class="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">Login</button>
